@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 4</title>
+    <title>Form 5</title>
 </head>
 <body>
     <input type="text" id="inp">
-    <button id="btn">Ok</button>
 
     <script>
         const inp = document.querySelector('#inp');
-        const btn = document.querySelector('#btn');
-        btn.onclick = function () {
-            document.body.style.background = inp.value;
+        inp.onblur = function () {
+            inp.value = inp.value.toUpperCase();
         }
     </script>
 </body>
