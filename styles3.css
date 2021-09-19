@@ -137,6 +137,15 @@ html {
 
 .left-panel__list {
     border: 1px solid #f2f2f2;
+    position: relative;
+}
+
+.left-panel__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px dashed #c9c9c9;
+    width: 90%;
+    right: 15px;
 }
 
 .left-panel__link {

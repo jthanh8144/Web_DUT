@@ -138,7 +138,7 @@ input[type="checkbox"] {
 }
 
 .checkbox input[type="checkbox"]:checked ~ .checkmark {
-    background-color: var(--main-color);
+    background-color: #41dfd7;
 }
 
 .checkmark::after {
