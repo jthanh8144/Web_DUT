@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 4</title>
+</head>
+<body>
+    <select name="select" id="select">
+        <option value="0">Index 0</option>
+        <option value="1">Index 1</option>
+        <option value="2">Index 2</option>
+        <option value="3">Index 3</option>
+    </select>
+    <input type="text" id="inp">
+    <button id="btn">OK</button>
+
+    <script>
+        const select = document.querySelector('#select');
+        const input = document.querySelector('#inp');
+        const btn = document.querySelector('#btn');
+
+        btn.onclick = function () {
+            if (input.value >= 0 && input.value < 4) {
+                select.options.selectedIndex = input.value;
+            }
+        }
+    </script>
+</body>
+</html>

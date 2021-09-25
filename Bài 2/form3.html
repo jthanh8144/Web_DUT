@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+</head>
+<body>
+    <input type="text" name="inp1" id="inp1">
+    <input type="text" name="inp2" id="inp2">
+
+    <script>
+        const inp1 = document.querySelector('#inp1');
+        const inp2 = document.querySelector('#inp2');
+        
+        window.onload = function () {
+            inp1.focus();
+        }
+
+        inp1.onblur = function () {
+            var value = inp1.value;
+            if (value) {
+                var result = '';
+                for (var i = 0; i < value.length; i++) {
+                    if (value[i] == value[i].toUpperCase()) {
+                        result += value[i].toLowerCase();
+                    } else {
+                        result += value[i].toUpperCase();
+                    }
+                }
+                inp2.value = result;
+            }
+        }
+    </script>
+</body>
+</html>
