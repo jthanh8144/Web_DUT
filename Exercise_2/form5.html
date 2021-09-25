@@ -13,13 +13,15 @@
         <option value="2">Index 2</option>
         <option value="3">Index 3</option>
     </select>
-    <input type="text" id="inp">
+    <input type="text" id="inp" disabled>
+    <button id="btn">Click here!</button>
 
     <script>
         const select = document.querySelector('#select');
         const input = document.querySelector('#inp');
+        const btn = document.querySelector('#btn');
 
-        select.onchange = function () {
+        btn.onclick = function () {
             input.value = select.options.selectedIndex;
         }
     </script>
