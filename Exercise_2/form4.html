@@ -5,16 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form 4</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #45ece4;
+        }
+        .main {
+            min-height: 100vh;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .container {
+            width: 100%;
+            align-self: center;
+            padding: 30px;
+        }
+        .form-control {
+            height: 35px;
+            padding: 8px 12px;
+            border: 1px solid #b3b3b3;
+            border-radius: 3px;
+            outline: none;
+            font-size: 14px;
+        }
+        input:focus {
+            border: 2px solid #0058fc;
+        }
+        .btn {
+            padding: 8px 12px;
+            border-radius: 3px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <select name="select" id="select">
-        <option value="0">Index 0</option>
-        <option value="1">Index 1</option>
-        <option value="2">Index 2</option>
-        <option value="3">Index 3</option>
-    </select>
-    <input type="text" id="inp">
-    <button id="btn">OK</button>
+    <div class="main">
+        <div class="container">
+            <select name="select" id="select" class="form-control">
+                <option value="0">Index 0</option>
+                <option value="1">Index 1</option>
+                <option value="2">Index 2</option>
+                <option value="3">Index 3</option>
+            </select>
+            <input type="text" id="inp" class="form-control">
+            <button id="btn" class="btn">OK</button>
+        </div>
+    </div>
 
     <script>
         const select = document.querySelector('#select');

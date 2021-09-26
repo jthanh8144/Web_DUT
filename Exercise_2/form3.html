@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form 3</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #45ece4;
+        }
+        .main {
+            min-height: 100vh;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+
+            margin: auto;
+        }
+        .container {
+            width: 100%;
+            align-self: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            height: 35px;
+            padding: 8px 12px;
+            border: 1px solid #b3b3b3;
+            border-radius: 3px;
+            outline: none;
+            font-size: 14px;
+        }
+        input + input {
+            margin-top: 12px;
+        }
+        input:focus {
+            border: 2px solid #0058fc;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" name="inp1" id="inp1">
-    <input type="text" name="inp2" id="inp2">
+    <div class="main">
+        <div class="container">
+            <input type="text" name="inp1" id="inp1">
+            <input type="text" name="inp2" id="inp2">
+        </div>
+    </div>
 
     <script>
         const inp1 = document.querySelector('#inp1');
