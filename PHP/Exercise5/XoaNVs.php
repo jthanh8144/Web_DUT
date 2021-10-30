@@ -53,7 +53,6 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var delBtn = document.querySelector('.del-mul-btn');
-            console.log(delBtn);
             var checkboxs = document.querySelectorAll('input[name="IDNV[]"]');
             Array.from(checkboxs).forEach(checkbox => {
                 checkbox.onchange = () => {
