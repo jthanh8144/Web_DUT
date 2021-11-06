@@ -18,7 +18,7 @@
     } else {
         echo '
         <form action="../Controller/C_Student.php?mode='.$_REQUEST['mode'].'" method="POST">
-            <input type="text" name="id" id="" readonly>
+            <input type="text" name="id" id="">
             <input type="text" name="name" id="">
             <input type="text" name="age" id="">
             <input type="text" name="university" id="">';

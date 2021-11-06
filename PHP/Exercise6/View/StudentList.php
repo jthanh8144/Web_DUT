@@ -10,7 +10,7 @@
     <h2>Danh sách sinh viên</h2>
     <?php
         $mode = $_GET['mode'];
-        if ($mode != 'edit-view') {
+        if ($mode != 'edit-view' && $mode !='del') {
             $mode = 'view';
         }
         for ($i = 1; $i <= sizeof($studentList); $i++) {

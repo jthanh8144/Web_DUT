@@ -18,8 +18,7 @@ class Ctrl_Student {
                 break;
             case 'del':
                 if (isset($_REQUEST['stid'])) {
-                    $student = $modelStudent->delStudent($_REQUEST['stid']);
-                    include_once("../View/StudentDetail.php");
+                    $modelStudent->delStudent($_REQUEST['stid']);
                 } else {
                     $studentList = $modelStudent->getAllStudent();
                     include_once("../View/StudentList.php");
